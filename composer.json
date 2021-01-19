@@ -1,0 +1,28 @@
+{
+    "name": "arturb/arturborkowskirekrutacjahrtec",
+    "description": "console app for recruitment",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Artur Borkowski",
+            "email": "artur.borkowski78@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^5.2",
+        "guzzlehttp/guzzle": "^7.0", 
+        "ext-simplexml": "*",
+        "ext-json": "*",
+        "monolog/monolog": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }, 
+    "autoload": {
+        "psr-4": {
+          "ArturBorkowskiHRtec\\Command\\": "src/ArturBorkowskiHRtec/Command/",
+          "ArturBorkowskiHRtec\\Parser\\": "src/ArturBorkowskiHRtec/Parser/"
+        },
+        "classmap": ["src"]
+      }
+}
